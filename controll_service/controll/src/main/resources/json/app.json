@@ -1,0 +1,157 @@
+[
+  {
+    "appName": "火山小视频",
+    "appKey": "huoshan",
+    "appPackageName": "com.ss.android.ugc.live",
+    "appActivity": "com.ss.android.ugc.aweme.splash.SplashActivity",
+    "video": true,
+    "move" : false,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "抖音极速版",
+    "appKey": "douyin",
+    "appPackageName": "com.ss.android.ugc.aweme.lite",
+    "appActivity": "com.ss.android.ugc.aweme.splash.SplashActivity",
+    "video": true,
+    "move" : true,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "快手极速版",
+    "appKey": "ks",
+    "appPackageName": "com.kuaishou.nebula",
+    "appActivity": "com.yxcorp.gifshow.HomeActivity",
+    "video": true,
+    "move" : true,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "百度极速版",
+    "appKey": "bd",
+    "appPackageName": "com.baidu.searchbox.lite",
+    "appActivity": "com.baidu.searchbox.MainActivity",
+    "video": true,
+    "move" : false,
+    "sleep": 3,
+    "moveCount": 600
+  },
+
+  {
+    "appName": "有柿",
+    "appKey": "youshi",
+    "appPackageName": "com.ss.android.article.search",
+    "appActivity": "com.ss.android.article.news.activity.MainActivity",
+    "video": true,
+    "move" : false,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "悟空浏览器",
+    "appKey": "wukong",
+    "appPackageName": "com.cat.readall",
+    "appActivity": ".activity.BrowserMainActivity",
+    "video": true,
+    "move" : true,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "头条极速版",
+    "appKey": "toutiaosousuo",
+    "appPackageName": "com.ss.android.article.lite",
+    "appActivity": "com.ss.android.article.lite.activity.SplashActivity",
+    "video": true,
+    "move" : true,
+    "sleep": 3,
+    "moveCount": 600
+  },
+
+  {
+    "appName": "西瓜视频",
+    "appKey": "xg",
+    "appPackageName": "com.ss.android.article.video",
+    "appActivity": "com.ss.android.article.video.activity.SplashActivity",
+    "video": true,
+    "move" : true,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "红果免费短剧",
+    "appKey": "hpg",
+    "appPackageName": "com.phoenix.read",
+    "appActivity": "com.dragon.read.pages.splash.SplashActivity",
+    "video": true,
+    "move" : true,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "番茄畅听",
+    "appKey": "fqct",
+    "appPackageName": "com.xs.fm",
+    "appActivity": "com.dragon.read.pages.splash.SplashActivity",
+    "video": true,
+    "move" : false,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "速读免费小说",
+    "appKey": "sd",
+    "appPackageName": "com.dj.speed",
+    "appActivity": "com.chaozh.iReader.ui.activity.WelcomeActivity",
+    "video": true,
+    "move" : false,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "番茄小说",
+    "appKey": "fqxs",
+    "appPackageName": "com.dragon.read",
+    "appActivity": ".pages.splash.SplashActivity",
+    "video": true,
+    "move" : false,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "红果漫剧",
+    "appKey": "hgmj",
+    "appPackageName": "com.kylin.read",
+    "appActivity": "com.dragon.read.pages.main.MainFragmentActivity",
+    "video": true,
+    "move": true,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "喜番免费短剧",
+    "appKey": "kwai",
+    "appPackageName": "com.kwai.theater",
+    "appActivity": "com.kwai.theater.api.proxy.ProxyFragmentActivity$TubeEpisodeHomeTransparentActivityProxy",
+    "video": true,
+    "move": false,
+    "sleep": 3,
+    "moveCount": 600
+  },
+  {
+    "appName": "汽水音乐",
+    "appKey": "music",
+    "appPackageName": "com.luna.music",
+    "appActivity": "com.bytedance.android.sif.container.SifContainerActivity",
+    "video": true,
+    "move": false,
+    "sleep": 3,
+    "moveCount": 600
+  }
+
+
+
+]

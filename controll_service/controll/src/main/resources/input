@@ -1,0 +1,7 @@
+public class WaterMarginTest {
+    public static void main(String[] args) {
+        System.out.println("!");
+        int num = 108;
+        System.out.println("！");
+    }
+}

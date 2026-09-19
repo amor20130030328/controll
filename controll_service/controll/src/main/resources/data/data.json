@@ -1,0 +1,39 @@
+adb connect 192.168.1.12:5557
+adb -s 2NP0224528001318 tcpip 5555
+adb connect 192.168.1.7:5555
+adb -s ZXLFGITGYTEYBQW8 tcpip 5557
+adb connect 192.168.1.14:5557
+adb -s 2NP0224528001318 tcpip 5555
+adb connect 192.168.1.17:5555
+adb -s A92GUT5A10000858 tcpip 5555
+adb connect 192.168.1.18:5555
+adb -s A92GUT5A10000858 tcpip 5555
+adb connect 192.168.1.18:5555
+adb -s A92GUT5A10000858 tcpip 5557
+adb connect 192.168.1.18:5557
+adb -s 2NP0224528001318 tcpip 5555
+adb connect 192.168.1.17:5555
+adb -s 2NP0224528001318 tcpip 5555
+adb connect 192.168.1.22:5555
+adb -s ZXLFGITGYTEYBQW8 tcpip 5555
+adb connect 192.168.1.24:5555
+adb -s 7NQBB24328021580 tcpip 5555
+adb connect 192.168.1.12:5555
+adb -s 7NQBB24328021580 tcpip 5557
+adb connect 192.168.1.12:5557
+adb -s CMBNW20506008238 tcpip 5555
+adb connect 192.168.1.8:5555
+adb -s 7NQBB24328021580 tcpip 5555
+adb connect 192.168.1.12:5555
+adb -s DAPNVC5PMB69YDDY tcpip 5557
+adb connect 192.168.1.10:5557
+adb -s CMBNW20506008238 tcpip 5559
+adb connect 192.168.1.8:5559
+adb -s A5DN9X3A14W03529 tcpip 5561
+adb connect 192.168.1.4:5561
+adb -s 7NQBB24328021580 tcpip 5555
+adb connect 192.168.1.12:5555
+adb -s 7NQBB24328021580 tcpip 5557
+adb connect 192.168.1.12:5557
+adb -s CMBNW20506008238 tcpip 5559
+adb connect 192.168.1.8:5559

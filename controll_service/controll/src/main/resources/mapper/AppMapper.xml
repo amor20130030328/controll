@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.amore.springboot.explore.mapper.AppMapper">
+
+    <resultMap id="appMap" type="com.amore.springboot.explore.bean.App">
+        <result column="id" property="id"/>
+        <result column="app_name" property="appName"/>
+        <result column="app_package_name" property="appPackageName"/>
+        <result column="app_key" property="appKey"/>
+        <result column="app_activity" property="appActivity"/>
+    </resultMap>
+
+    <select id="getAllApp" resultMap="appMap">
+        SELECT * FROM app
+    </select>
+
+    <insert id="insert" parameterType="com.amore.springboot.explore.bean.App">
+        insert into app(
+            id ,
+            app_name ,
+            app_package_name,
+            app_key ,
+            app_activity
+        ) values(
+            #{id},
+            #{appName},
+            #{appPackageName},
+            #{appKey},
+            #{appActivity}
+        )
+    </insert>
+
+    <insert id="batchInsert" parameterType="java.util.List">
+        INSERT INTO app (id, app_name, app_package_name, app_key, app_activity)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.id}, #{item.appName}, #{item.appPackageName}, #{item.appKey}, #{item.appActivity})
+        </foreach>
+    </insert>
+</mapper>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.amore.springboot.explore.mapper.DeviceIpInfoMapper">
+
+    <resultMap id="deviceMap" type="com.amore.springboot.explore.bean.DeviceIpInfo">
+        <result column="id" property="id"/>
+        <result column="device_id" property="deviceId"/>
+        <result column="public_ip" property="publicIp"/>
+        <result column="lan_ip" property="lanIp"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="getAllDevice" resultMap="deviceMap">
+        SELECT * FROM device_ip_info
+    </select>
+
+    <select id="getDeviceById" resultMap="deviceMap">
+        SELECT * FROM device_ip_info where device_id = #{deviceId}
+    </select>
+
+    <insert id="insert" parameterType="com.amore.springboot.explore.bean.DeviceIpInfo">
+        insert into device_ip_info(
+            device_id,
+            public_ip,
+            lan_ip,
+            create_time,
+            update_time
+        ) values(
+            #{deviceId},
+            #{publicIp},
+            #{lanIp},
+            #{createTime},
+            #{updateTime}
+        )
+    </insert>
+
+    <update id="update" parameterType="com.amore.springboot.explore.bean.DeviceIpInfo">
+        update device_ip_info
+        SET
+            public_ip = #{publicIp},
+            lan_ip = #{lanIp},
+            update_time = #{updateTime}
+        WHERE device_id = #{deviceId}
+    </update>
+
+    <insert id="batchInsert" parameterType="java.util.List">
+        insert into device_ip_info(
+            device_id,
+            public_ip,
+            lan_ip,
+            create_time,
+            update_time
+        )
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (
+                #{deviceId},
+                #{publicIp},
+                #{lanIp},
+                #{createTime},
+                #{updateTime}
+            )
+        </foreach>
+    </insert>
+
+    <delete id="delete">
+        delete FROM device_ip_info where device_id = #{deviceId}
+    </delete>
+</mapper>

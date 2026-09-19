@@ -1,0 +1,43 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building controll_app 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ controll_app ---
+[INFO] Deleting D:\code\programer\java\new_coder\new_coder\controll_app\controll_app\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ controll_app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ controll_app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to D:\code\programer\java\new_coder\new_coder\controll_app\controll_app\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ controll_app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ controll_app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to D:\code\programer\java\new_coder\new_coder\controll_app\controll_app\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ controll_app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ controll_app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ controll_app ---
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ controll_app ---
+[INFO] Building jar: D:\code\programer\java\new_coder\new_coder\controll_app\controll_app\target\controll_app-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.4.RELEASE:repackage (repackage) @ controll_app ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-assembly-plugin:3.3.0:single (make-assembly) @ controll_app ---

@@ -1,0 +1,7 @@
+CREATE TABLE app(
+id VARCHAR(256) PRIMARY KEY,
+app_name VARCHAR(256),
+app_package_name VARCHAR(256),
+app_key VARCHAR(256),
+app_activity VARCHAR(256)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

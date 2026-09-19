@@ -1,0 +1,10 @@
+CREATE TABLE device(
+	device_id VARCHAR(256) PRIMARY KEY,
+	phone_num VARCHAR(256),
+	id_card VARCHAR(256),
+	user_name VARCHAR(256)
+)ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+ALTER DATABASE amore CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+ALTER TABLE device CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE device CHANGE user_name user_name VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
