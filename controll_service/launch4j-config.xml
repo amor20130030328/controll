@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch4jConfig>
-  <dontWrapJar>false</dontWrapJar>
+  <dontWrapJar>true</dontWrapJar>
   <headerType>console</headerType>
-  <jar>controll/target/controll-1.0-SNAPSHOT-jar-with-dependencies.jar</jar>
+  <jar>controll/target/controll-1.0-SNAPSHOT.jar</jar>
   <outfile>controll-service.exe</outfile>
+  <classPath>
+    <mainClass>org.springframework.boot.loader.JarLauncher</mainClass>
+  </classPath>
   <errTitle>设备控制系统 - 后端服务</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
