@@ -17,6 +17,10 @@ controll_service/*/target/
 controll_service/controll/target/*
 !controll_service/controll/target/controll-1.0-SNAPSHOT-jar-with-dependencies.jar
 
+# Runtime environments (用户需要自己安装)
+java/
+node/
+
 # OS
 .DS_Store
 Thumbs.db

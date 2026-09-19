@@ -39,49 +39,72 @@
 ## 📦 系统要求
 
 - **操作系统**: Windows 10+ / Linux
+- **Java**: JDK/JRE 8 或更高版本
+- **Node.js**: v12 或更高版本
 - **内存**: 建议4GB以上
-- **磁盘空间**: 约600MB
+- **磁盘空间**: 约200MB
 - **网络**: 需要访问远程MySQL数据库
 
-**注意**: 本项目已包含Java和Node.js运行环境，无需单独安装。
+### 环境安装
+
+如果你的电脑还没有安装Java和Node.js：
+
+**Java 8 下载：**
+- Oracle JDK: https://www.oracle.com/java/technologies/downloads/
+- OpenJDK: https://adoptium.net/
+
+**Node.js 下载：**
+- 官网: https://nodejs.org/ （推荐LTS版本）
 
 ## 🚀 快速开始
 
 ### Windows用户
 
-1. **克隆仓库**
+1. **安装环境**（如果还没有）
+   - 安装 Java 8+ 和 Node.js
+
+2. **克隆仓库**
    ```bash
    git clone https://github.com/amor20130030328/controll.git
    cd controll
    ```
 
-2. **启动系统**
+3. **启动系统**
    
    双击运行 `start.bat` 文件，系统会自动启动所有服务。
 
-3. **访问系统**
+4. **访问系统**
    
    浏览器自动打开 http://localhost
 
 ### Linux用户
 
-1. **克隆仓库**
+1. **安装环境**（如果还没有）
+   ```bash
+   # Ubuntu/Debian
+   sudo apt install openjdk-8-jre nodejs npm
+   
+   # CentOS/RHEL
+   sudo yum install java-1.8.0-openjdk nodejs npm
+   ```
+
+2. **克隆仓库**
    ```bash
    git clone https://github.com/amor20130030328/controll.git
    cd controll
    ```
 
-2. **添加执行权限**
+3. **添加执行权限**
    ```bash
    chmod +x start.sh
    ```
 
-3. **启动系统**
+4. **启动系统**
    ```bash
    ./start.sh
    ```
 
-4. **访问系统**
+5. **访问系统**
    
    打开浏览器访问 http://localhost
 

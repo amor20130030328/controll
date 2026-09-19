@@ -8,23 +8,15 @@ echo ""
 # 获取脚本所在目录
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# 设置Java环境
-export JAVA_HOME="$SCRIPT_DIR/java/jre"
-export PATH="$JAVA_HOME/bin:$PATH"
-
-# 设置Node环境
-export NODE_HOME="$SCRIPT_DIR/node"
-export PATH="$NODE_HOME:$PATH"
-
 # 检查Java是否可用
 if ! command -v java &> /dev/null; then
-    echo "[错误] Java环境配置失败"
+    echo "[错误] 未找到Java环境，请先安装Java 8或更高版本"
     exit 1
 fi
 
 # 检查Node是否可用
 if ! command -v node &> /dev/null; then
-    echo "[错误] Node.js环境配置失败"
+    echo "[错误] 未找到Node.js环境，请先安装Node.js"
     exit 1
 fi
 
