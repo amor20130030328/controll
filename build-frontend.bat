@@ -1,63 +1,62 @@
 @echo off
-chcp 65001 >nul
 echo ================================
-echo  编译前端代码
+echo  Build Frontend
 echo ================================
 echo.
 
-REM 切换到前端目录
+REM Change to frontend directory
 cd /d "%~dp0controll_app"
 
-REM 检查Node.js是否安装
+REM Check Node.js
 where node >nul 2>&1
 if errorlevel 1 (
-    echo [错误] 未找到Node.js，请先安装Node.js
-    echo 下载地址: https://nodejs.org/
+    echo [ERROR] Node.js not found, please install Node.js first
+    echo Download: https://nodejs.org/
     pause
     exit /b 1
 )
 
-REM 检查npm是否安装
+REM Check npm
 where npm >nul 2>&1
 if errorlevel 1 (
-    echo [错误] 未找到npm
+    echo [ERROR] npm not found
     pause
     exit /b 1
 )
 
-echo [1/3] 检查依赖...
+echo [1/3] Checking dependencies...
 if not exist "node_modules" (
-    echo 正在安装依赖（首次编译需要较长时间）...
+    echo Installing dependencies (first build takes longer)...
     call npm install
     if errorlevel 1 (
-        echo [错误] npm install失败
+        echo [ERROR] npm install failed
         pause
         exit /b 1
     )
 ) else (
-    echo 依赖已存在，跳过安装
+    echo Dependencies exist, skipping install
 )
 
 echo.
-echo [2/3] 清理旧的构建文件...
+echo [2/3] Cleaning old build files...
 if exist "build" (
     rmdir /s /q build
 )
 
 echo.
-echo [3/3] 编译React项目...
+echo [3/3] Building React project...
 call npm run build
 if errorlevel 1 (
-    echo [错误] 编译失败
+    echo [ERROR] Build failed
     pause
     exit /b 1
 )
 
 echo.
 echo ================================
-echo  编译完成！
+echo  Build Complete!
 echo ================================
-echo 构建文件位置: %~dp0controll_app\build\
-echo 入口文件: %~dp0controll_app\build\index.html
+echo Build files location: %~dp0controll_app\build\
+echo Entry file: %~dp0controll_app\build\index.html
 echo.
 pause
