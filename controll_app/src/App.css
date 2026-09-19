@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.compact-row td {
+  padding: 0px 4px !important;
+  line-height: 1 !important;
+  height: 32px !important;
+  max-height: 32px !important;
+  overflow: hidden !important;
+}
+
+.compact-row {
+  height: 32px !important;
+  max-height: 32px !important;
+}
+
+.ant-table-small .ant-table-tbody > tr > td {
+  padding: 0px 4px !important;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 2px 4px !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr > td {
+  padding: 2px 4px !important;
+  line-height: 1.2 !important;
+}
+
+/* 操作列按钮紧凑 */
+.compact-row td .ant-btn,
+.compact-row td button {
+  padding: 0px 4px !important;
+  height: 22px !important;
+  font-size: 11px !important;
+  line-height: 20px !important;
+  margin: 1px 2px !important;
+}
+
+/* 操作列div不换行，单行排列 */
+.compact-row td div {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 2px !important;
+  overflow-x: auto !important;
+}

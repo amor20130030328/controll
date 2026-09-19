@@ -1,0 +1,33 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+.claude/
+
+# Logs
+*.log
+logs/
+server.log
+server_out.log
+
+# Build artifacts
+controll_app/node_modules/
+controll_service/*/target/
+!controll_service/controll/target/
+controll_service/controll/target/*
+!controll_service/controll/target/controll-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+temp/
+
+# Environment
+.env.local
+.env.development
+
+# Git
+controll_service/.git/
